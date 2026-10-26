@@ -1,23 +1,23 @@
 {
   "expo": {
-    "name": "formular-app",
-    "slug": "formular-app",
+    "name": "Prime Formular App",
+    "slug": "Prime-Formular-App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app-icon.png",
     "scheme": "formularapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/app-icon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/app-icon-foreground.png",
+        "backgroundColor": "#EFF6FF"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "icon": "./assets/images/app-icon.png",
+      "package": "com.ofejiro.primeformular"
     },
     "web": {
       "output": "static",
@@ -39,6 +39,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cb69c204-59d9-4eeb-8abf-e9dd2f86fe2b"
+      }
     }
   }
 }

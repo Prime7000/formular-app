@@ -17,8 +17,9 @@ export default function SplashScreen() {
       <SafeAreaView style={style.container}>
         <View>
           <Image
-            source={require("/home/prime/Desktop/react-native-app-portfoilo/formular-app/assets/images/Prime Formarlar App logo.png")}
+            source={require("../../assets/images/Prime Formarlar App logo.png")}
             style={style.logo}
+            resizeMode="contain"
           />
         </View>
       </SafeAreaView>
@@ -35,7 +36,7 @@ const style = StyleSheet.create({
   },
 
   logo: {
-    height: 100,
-    width: 100,
+    height: 240,
+    width: 160,
   },
 });

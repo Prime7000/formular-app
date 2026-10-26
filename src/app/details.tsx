@@ -66,7 +66,7 @@ export default function Details() {
               height: 150,
               width: "93%",
               marginLeft: 17,
-              marginTop: 10,
+              marginTop: 30,
               borderRadius: 10,
               padding: 10,
             }}
@@ -89,19 +89,11 @@ export default function Details() {
             </View>
           </View>
 
-          <Text
-            style={{
-              fontWeight: "bold",
-              paddingLeft: 17,
-              paddingTop: 17,
-              fontSize: 17,
-            }}
-          >
-            Note:{" "}
-          </Text>
-
           <ScrollView style={{ paddingLeft: 17 }}>
-            <Text style={{ fontSize: 15 }}>{formula.note}</Text>
+            <View style={style.card}>
+              <Text style={style.sectionTitle}>Note </Text>
+              <Text style={style.body}>{formula.note}</Text>
+            </View>
           </ScrollView>
         </View>
         {/* end of body */}
@@ -115,5 +107,25 @@ const style = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F8FAFC",
     padding: 10,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0F172A",
+  },
+  card: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: "#E2E8F0",
+    padding: 20,
+    gap: 12,
+    marginTop: 17,
+    width: "96%",
+  },
+  body: {
+    fontSize: 15,
+    lineHeight: 24,
+    color: "#475569",
   },
 });
